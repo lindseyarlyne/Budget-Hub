@@ -1,0 +1,1 @@
+- Add CSS media queries to optimize the layout for larger screens.
