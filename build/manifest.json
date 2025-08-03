@@ -1,0 +1,73 @@
+{
+  "short_name": "Budget Hub",
+  "name": "Budget Hub - Personal Finance Tracker",
+  "description": "A high-performance budget tracking application with advanced analytics and savings goals",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png", 
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#f8fafc",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["finance", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "type": "image/png",
+      "sizes": "375x812",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot-desktop.png", 
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Entry",
+      "short_name": "Add Entry",
+      "description": "Quickly add a new budget entry",
+      "url": "/entry",
+      "icons": [
+        {
+          "src": "icon-add.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Overview",
+      "short_name": "Overview", 
+      "description": "View budget overview and analytics",
+      "url": "/",
+      "icons": [
+        {
+          "src": "icon-overview.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
