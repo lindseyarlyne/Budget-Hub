@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.App-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .App-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
