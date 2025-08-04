@@ -482,6 +482,251 @@
   }
 }
 
+/* Entry List Styles */
+.entry-list {
+  background: #c3aeb1;
+  color: #fefefe;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+}
+
+.entry-list h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fefefe;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+}
+
+.filter-controls label {
+  color: #fefefe;
+  font-weight: 400;
+}
+
+.filter-controls select {
+  background: #fefefe;
+  color: #4d3c3c;
+  border: 1px solid #a56b7a;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #fefefe;
+  font-family: 'Raleway', sans-serif;
+}
+
+.empty-state p {
+  margin: 0.5rem 0;
+}
+
+.entries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.entry-card {
+  background: #f5e6e1;
+  color: #4d3c3c;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid #d8c3b8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(77, 60, 60, 0.1);
+}
+
+.entry-card--income {
+  border-left: 4px solid #b5d0ba;
+}
+
+.entry-card--expense {
+  border-left: 4px solid #d8a48f;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.entry-type-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+}
+
+.entry-type-badge--income {
+  background: #b5d0ba;
+  color: #2d4831;
+}
+
+.entry-type-badge--expense {
+  background: #d8a48f;
+  color: #6b3e2f;
+}
+
+.entry-date {
+  color: #8b7177;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+}
+
+.entry-amount {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4d3c3c;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.entry-content .label-row {
+  color: #4d3c3c;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-edit {
+  background: #a56b7a;
+  color: #fefefe;
+}
+
+.btn-edit:hover:not(:disabled) {
+  background: #8b5a68;
+}
+
+.btn-delete {
+  background: #d8a48f;
+  color: #6b3e2f;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: #c7906f;
+}
+
+.btn-save {
+  background: #b5d0ba;
+  color: #2d4831;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #a2c4a7;
+}
+
+.btn-cancel {
+  background: #e9dad7;
+  color: #4d3c3c;
+  border: 1px solid #c3aeb1;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background: #ddc7c2;
+}
+
+/* Entry Edit Form */
+.entry-edit-form {
+  margin-top: 1rem;
+}
+
+.entry-edit-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.entry-edit-form label {
+  display: block;
+  color: #4d3c3c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.entry-edit-form .form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #c3aeb1;
+  border-radius: 6px;
+  background: #fefefe;
+  color: #4d3c3c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+}
+
+.entry-edit-form .form-control:focus {
+  outline: none;
+  border-color: #a56b7a;
+  box-shadow: 0 0 0 2px rgba(165, 107, 122, 0.2);
+}
+
+.loading-text,
+.error-text {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
+  color: #fefefe;
+}
+
+.error-text {
+  color: #d8a48f;
+}
+
 /* Print styles */
 @media print {
   .app-header nav,

@@ -7,6 +7,7 @@ import './App.css';
 // Lazy load components for code splitting
 const BudgetOverview = lazy(() => import('./components/BudgetOverview'));
 const EntryForm = lazy(() => import('./components/EntryForm'));
+const EntryList = lazy(() => import('./components/EntryList'));
 const PayPeriodList = lazy(() => import('./components/PayPeriodList'));
 const SavingsTracker = lazy(() => import('./components/SavingsTracker'));
 
@@ -16,12 +17,19 @@ function App() {
       <Router>
         <div className="app">
           <header className="app-header">
-            <h1>Budget Hub</h1>
+            <img 
+              src="https://cdn.pixabay.com/photo/2022/08/21/19/16/quartz-7402870_1280.png" 
+              className="crystals" 
+              alt="Decorative crystal gems"
+              loading="lazy"
+            />
+            <h1>Whimsy Grove</h1>
             <nav>
-              <a href="#overview">Overview</a>
-              <a href="#entry">Add Entry</a>
-              <a href="#periods">Pay Periods</a>
-              <a href="#savings">Savings</a>
+              <Link to="/">Overview</Link>
+              <Link to="/entry">Add Entry</Link>
+              <Link to="/entries">Edit Entries</Link>
+              <Link to="/periods">Pay Periods</Link>
+              <Link to="/savings">Savings</Link>
             </nav>
           </header>
           
@@ -30,6 +38,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<BudgetOverview />} />
                 <Route path="/entry" element={<EntryForm />} />
+                <Route path="/entries" element={<EntryList />} />
                 <Route path="/periods" element={<PayPeriodList />} />
                 <Route path="/savings" element={<SavingsTracker />} />
               </Routes>
