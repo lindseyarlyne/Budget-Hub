@@ -1,14 +1,14 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ErrorBoundary from './components/ErrorBoundary';
-import LoadingSpinner from './components/LoadingSpinner';
+import ErrorBoundary from './ErrorBoundary';
+import LoadingSpinner from './LoadingSpinner';
 import './App.css';
 
 // Lazy load components for code splitting
-const BudgetOverview = lazy(() => import('./components/BudgetOverview'));
-const EntryForm = lazy(() => import('./components/EntryForm'));
-const PayPeriodList = lazy(() => import('./components/PayPeriodList'));
-const SavingsTracker = lazy(() => import('./components/SavingsTracker'));
+const BudgetOverview = lazy(() => import('./BudgetOverview'));
+const EntryForm = lazy(() => import('./EntryForm'));
+const PayPeriodList = lazy(() => import('./PayPeriodList'));
+const SavingsTracker = lazy(() => import('./SavingsTracker'));
 
 function App() {
   return (

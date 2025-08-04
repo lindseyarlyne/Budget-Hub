@@ -1,19 +1,15 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 
 // Performance monitoring
 import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals';
-import { performanceMonitor } from './utils/performance';
 
 function sendToAnalytics(metric) {
   // In production, send to your analytics service
   console.log(metric);
 }
-
-// Initialize performance monitoring
-performanceMonitor.init();
 
 getCLS(sendToAnalytics);
 getFID(sendToAnalytics);
